@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@300;400&family=Oswald:wght@500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body{
+            background: rgb(222, 222, 222);
+        }
+        .contenedor-header{
+            width: 100%;
+        }
+        .contenedor{
+            width: 80%;
+            margin: 0 auto; /*Centrar el contenedor*/
+            font-family: 'Heebo', sans-serif;
+            background: #FFF;
+        }
+
+
+
+        nav{
+            background-color: rgb(29, 26, 26);
+            height: 70px;
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            color: #FFF;
+        }
+        .items ul{
+            display: flex;
+        }
+
+        .items ul li{
+            list-style: none;
+            padding: 20px;
+        }
+
+        .items ul li a{
+            text-decoration: none;
+            color: #FFF;
+            font-family: 'Heebo', sans-serif;
+            text-transform: uppercase;
+        }
+
+        .items ul li a:hover{
+            font-weight: bold;
+            color: antiquewhite;
+            transition: 0.3s;
+        }
+        .logo{
+            padding-left: 20px;
+        }
+
+
+        #home{
+            background: url('img/AdobeStock_144951271.jpeg');
+            background-size: cover;
+        }
+        .contenedor-home{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: #FFF;
+            flex-direction: column;
+            background-color: rgba(79, 79, 79,0.7
+            );
+            height: calc(100vh - 70px);
+
+        }
+
+        .contenedor-home h1{
+            font-size: 40px;
+        }
+        
+        .contenedor-home a{
+            color: #FFF;
+            text-decoration: none;
+            display: inline-block;
+            padding: 18px 32px;
+            background-color: rgb(2, 49, 27);
+            margin-top: 15px;
+            border-radius: 20px;
+        }
+
+        section{
+            min-height: 400px;
+        }
+        .contenedor-servicios{
+            display: flex;
+            padding: 20px;
+        }
+
+        .servicios-info{
+            width: 33.33%;
+            padding: 10px;
+            text-align: center;
+            min-height: 400px;
+        }
+
+        .contenedor-acercade{
+            display: flex;
+            align-items: center;
+            min-height: 400px;
+            padding: 20px;
+        }
+        .contenedor-contactanos{
+            display: flex;
+            padding: 20px;
+        }
+
+        #acercade{
+            background-color: rgb(230, 230, 230);
+        }
+        .img-acercade{
+            width: 30%;
+        }
+
+        .info-acercade{
+            width: 70%;
+
+            padding: 20px;
+        }
+        img{
+            width: 100%;
+        }
+        .tema{
+            text-align: center;
+            padding-top: 10px;
+        }
+
+        footer{
+            background-color: rgb(30, 30, 30);
+            height: 100px;
+        }
+
+        .contactanos-info-mapa{
+            padding: 10px;
+            width: 60%;
+        }
+
+        .contactanos-info-formulario{
+            width: 40%;
+            padding: 10px;
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+        }
+        form{
+            display: block;
+            width: 80%;
+        }
+        label{
+            display: block;
+            margin-top: 20px;
+        }
+        input{
+            display: block;
+            width: 100%;
+            height: 40px;
+        }
+
+        textarea{
+            width: 100%;
+        }
+
+        .btn{
+            width: 100px;
+            margin-top: 30px;
+        }
+
+        .contenedor-pie{
+            color: #FFF;
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 20px;
+            font-size: 40px;
+        }
+
+        .contenedor-pie p{
+            font-size: 16px;
+        }
+
+
+    </style>
+</head>
+<body>
+    <div class="contenedor">
+        <header>
+            <nav>
+                <div class="logo">
+                    <h1>Logo</h1>
+                </div>
+                <div class="items">
+                    <ul>
+                        <li><a href="#">Inicio</a></li>
+                        <li><a href="#">Servicios</a></li>
+                        <li><a href="#">Acerca de</a></li>
+                        <li><a href="#contact">Contáctanos</a></li>
+                    </ul>
+                </div>
+            </nav>
+        </header>
+   <main>
+   
+        <section id="home">
+            <div class="contenedor-home">
+                <h1 data-aos="fade-up">Nombre de la empresa</h1>
+                <h4>Elogan o frase</h4>
+                <a href="">Conocer mas</a>
+            </div>
+        </section>
+        <section id="servicios">
+            <h2 class="tema">Servicios</h2>
+            <div class="contenedor-servicios">
+            <div class="servicios-info">
+                <img src="img/imagen.jpg" alt="">
+                <h2>Servicio 1</h2>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dicta, laudantium?</p>
+            </div>
+            <div class="servicios-info">
+                <img src="img/imagen.jpg" alt="">
+                <h2>Servicio 1</h2>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dicta, laudantium?</p>
+            </div>
+            <div class="servicios-info">
+                <img src="img/imagen.jpg" alt="">
+                <h2>Servicio 1</h2>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dicta, laudantium?</p>
+            </div>
+          </div>
+        </section>
+        <section id="acercade">
+            <h2 class="tema">Acerca de</h2>
+            <div class="contenedor-acercade">
+                <div class="img-acercade">
+                    <img src="img/imagen.jpg" alt="">
+                </div>
+                <div class="info-acercade">
+                    <h2>Nuestra historia</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique illum, aspernatur, repellat a sequi animi est delectus exercitationem earum facere autem? Vero officia illo autem neque, laborum voluptate nihil deserunt!</p>
+                    <p>Autem qui nobis sequi ipsum delectus minima porro eveniet modi quidem id, possimus laboriosam fugit nam exercitationem. Quam, delectus saepe perferendis architecto aliquam nemo ut, debitis repellat illum corrupti assumenda.</p>
+                    <p>Numquam eum tempora repellat cum similique, iusto id esse earum iste eos doloribus, asperiores ea corporis eius magni vero nisi? Quidem exercitationem a animi doloremque expedita. Magnam magni nostrum distinctio.</p>
+                   
+                </div>
+            </div>
+        </section>
+        <section id="contactanos">
+            <h2 class="tema">Contactanos</h2>
+            <div class="contenedor-contactanos">
+                <div class="contactanos-info-mapa">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3875.938011906885!2d-89.72823970574403!3d13.72220274727476!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8f62b78ec6301bb7%3A0x594785b03ab69e9f!2sAgape%20Centro!5e0!3m2!1ses!2ssv!4v1670450338411!5m2!1ses!2ssv" width="100%" height="100%" style="border:2px solid #c4c2c2;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+                <div class="contactanos-info-formulario">
+                  <h3>Escribenos</h3>
+                  
+                    <form action="enviar.php" method="post">
+                        <label for="nombre">Nombre</label>
+                        <input type="text" placeholder="escribe tu nombre" required>
+                        <label for="email">Email</label>
+                        <input id="email" type="email" placeholder="usuario@dominio.com" required>
+                        <label for="mensaje">Mensaje</label>
+                        <textarea name="" id="mensaje" cols="30" rows="6" required></textarea>
+                        <input type="submit" value="Enviar" class="btn">
+                    </form>
+                </div>
+            </div>
+        </section>
+        <footer>
+            <div class="contenedor-pie">
+                <i class="fa-brands fa-facebook"></i>
+                <i class="fa-brands fa-square-twitter"></i>
+                <i class="fa-brands fa-square-instagram"></i>
+                <i class="fa-brands fa-youtube"></i>
+            </div>
+        </footer>
+    </div>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+</main>
+</body>
+</html>
